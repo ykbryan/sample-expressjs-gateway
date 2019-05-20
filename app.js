@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var router = express.Router()
 var bodyParser = require('body-parser');
-const apiAdapter = require('./apiAdapter')
+const apiAdapter = require('./api-adapter')
 
 const BASE_URL = process.env.BACKEND_URL
 const api = apiAdapter(BASE_URL)

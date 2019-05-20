@@ -13,6 +13,7 @@ RUN npm install --production
 # RUN npm install --only=production
 
 # Bundle app source
+COPY api-adapter.js /app/api-adapter.js
 COPY app.js /app/app.js
 
 EXPOSE 3001
