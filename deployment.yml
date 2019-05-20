@@ -40,6 +40,9 @@ spec:
       containers:
       - image: CONTAINER_IMAGE
         name: expressjs-gateway
+        env:
+          - name: BACKEND_URL
+            value: expressjs-app-red.default.svc.cluster.local
         ports:
         - containerPort: 3001
           protocol: TCP
