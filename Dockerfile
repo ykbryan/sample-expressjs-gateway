@@ -15,5 +15,5 @@ RUN npm install --production
 # Bundle app source
 COPY app.js /app/app.js
 
-EXPOSE 3000
+EXPOSE 3001
 CMD [ "npm", "start" ]
