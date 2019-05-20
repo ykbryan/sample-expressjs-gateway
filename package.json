@@ -1,0 +1,26 @@
+{
+  "name": "sample-expressjs-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykbryan/sample-expressjs-gateway.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykbryan/sample-expressjs-gateway/issues"
+  },
+  "homepage": "https://github.com/ykbryan/sample-expressjs-gateway#readme"
+}
