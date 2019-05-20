@@ -42,7 +42,7 @@ spec:
         name: expressjs-gateway
         env:
           - name: BACKEND_URL
-            value: expressjs-app-red.default.svc.cluster.local
+            value: http://expressjs-app-red.default.svc.cluster.local
         ports:
         - containerPort: 3001
           protocol: TCP
