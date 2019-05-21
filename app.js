@@ -11,17 +11,17 @@ const port = 3001;
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.get('/', (req, res) => {
-//   // Add your code here
-//   // Return the API Gateway event and query string parameters for example
-//   res.json({ success: 'get call succeed!', url: req.url });
-// });
+app.get('/', (req, res) => {
+  // Add your code here
+  // Return the API Gateway event and query string parameters for example
+  res.json({ success: 'get call succeed!', url: req.url });
+});
 
-router.get('/', (req, res) => {
-  api.get(req.path).then(resp => {
-    res.send(resp.data)
-  })
-})
+// router.get('/', (req, res) => {
+//   api.get(req.path).then(resp => {
+//     res.send(resp.data)
+//   })
+// })
 
 router.get('/products', (req, res) => {
   api.get(req.path).then(resp => {
